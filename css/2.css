@@ -1,8 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Space+Grotesk:wght@300&display=swap');
-body{
-    font-family: 'Space Grotesk', sans-serif;
-    font-family: 'Pacifico', cursive;
+body {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
 }
+ul,
+li {
+    padding: 0;
+    list-style-type: none;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 30px;
+}
+header{
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    /* box-shadow: 10px 10px 100px rgba(21, 70, 9, 0.6), 10px 10px 120px rgba(0, 0, 0, 0.3), 10px 10px 30px rgba(0, 0, 0, 0.2); */
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.5),
+    10px 10px 10px rgba(0, 0, 0, 0.5),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+nav{
+    /* background-color: rgba(12, 23, 0.023, 0.4); */
+    border: 1px solid #ddd;
+}
+nav li{
+    text-decoration: underline;
+}
+article{
+    padding: 30px;
+}
+article h2{
+    font-size: 3.5rem;
+    max-width: 800px;
+}
+article img{
+    width: 100%;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 100px rgba(21, 70, 9, 0.6), 0px 0px 120px rgba(0, 0, 0, 0.3), 0px 0px 30px rgba(0, 0, 0, 0.2); */
+    box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.5),
+    10px 10px 10px rgba(0, 0, 0, 0.5),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 
+}
+article p{
+    margin-top: 30px;
+    line-height: 2em;
+    color: #777;
 
-  
+}
+aside{
+    padding: 30px;
+    border-left: 1px solid #ddd;
+}
+footer{
+    grid-column: span 3;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 30px;
+}
